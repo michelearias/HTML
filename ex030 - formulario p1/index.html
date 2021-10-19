@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML Completo e profissional</title>
+    <style>
+        input {
+            display: block;
+        }
+
+        form {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+
+        #dv_btns {
+            display: flex; /* faz os botoes ficarem um do lado do outro */
+        }
+
+    </style>
+</head>
+<body>
+    <!--representa um conteiner com os elementos de formulário. Tem display block-->
+
+    <form action="#" name="f_cadastro" method="get">
+        <label for="">Nome:</label> <!--etiqueta para este input. Representa uma legenda. Tem o display inline. 
+        Get: passa os valores para a propria pagina-->
+        <input type="text" name="f_nome" id=""> <!--input text isere uma caixa de texto no nosso formulario. Tem display inline-->
+        <div id="dv_btns">
+            <input type="submit" value="Gravar" name="f_btn_enviar"> <!--faz o envio dos dados. pega os valores dos dados preenchidos no formulario e envia os dados para a pagina especificada no action. O method indica como é feita a passagem desses dados para a pagina especificada no action -->
+            <input type="reset" value="Limpar" name="f_btn_limpar"> <!--reset faz a limpeza dos campos do formulario-->
+            <input type="button" value="Nada" name="f_btn_nada"> <!--button não tem comportamento pre-definido, devo criar um script indicando o coportamento-->
+        </div>
+    </form>
+    
+</body>
+</html>

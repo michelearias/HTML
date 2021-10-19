@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML Completo e profissional</title>
+    <style>
+
+        .quebra {
+            display: block;
+
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <!--representa um conteiner com os elementos de formulário. Tem display block-->
+
+    <form action="#" name="f_cadastro" method="get">
+
+        <label class="quebra espaco_t" for="">Telefone:</label>
+        <input type="tel" name="f_tel" id="" required pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx)9xxxx-xxxx"> <!--placeholder - estabelecer o padrao de telefone-->
+
+        <label class="quebra espaco_t" for="">Senha:</label>
+        <input type="password" name="f_senha" id=""  required pattern="[a-za-z0-9]{5}">  
+
+        <label class="quebra espaco_t" for="">Digite seu email:</label>
+        <input type="email" name="f_email" id="">  
+
+        <label class="quebra espaco_t" for="">Escolha um número:</label>
+        <input type="number" name="f_numero" id="" min="0" max="10">  
+
+        <label class="quebra espaco_t" for="">Pesquisa:</label>
+        <input type="search" name="f_pesquisa" id="">  <!--campo de texto normal, aparece um x para limpar o campo. Campo proprio para entrada de string que funciona como pesquisa-->
+
+
+
+
+        <input class="quebra espaco_t" type="submit" value="Enviar" name="f_enviar"> 
+        
+        
+    </form>
+    
+</body>
+</html>

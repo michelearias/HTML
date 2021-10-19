@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML Completo e profissional</title>
+    <style>
+
+        .quebra {
+            display: block;
+
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <!--representa um conteiner com os elementos de formulário. Tem display block-->
+
+    <form action="#" name="f_cadastro" method="get">
+
+        <label class="quebra espaco_t" for="">Selecione uma cor:</label>
+        <input type="color" name="f_cor" id="" required>
+
+        <label class="quebra espaco_t" for="">Digite seu email:</label>
+        <input type="email" name="f_email" id=""  required> 
+
+        <input class="quebra espaco_t" type="image" src="logo.png" alt="Logo CFB Cursos"> <!--permite inserir uma imagem no formulario, entretanto essa imagem é um botão. Imagem funciona como um submit.-->
+
+
+        <input class="quebra espaco_t" type="submit" value="Enviar" name="f_enviar"> 
+        
+        
+    </form>
+    
+</body>
+</html>

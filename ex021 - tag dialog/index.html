@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML Completo e Profissional</title>
+    <script>
+        function abrirDialog(){
+            document.getElementById("d1").setAttribute("open","");
+        }
+        function fecharDialog() {
+            document.getElementById("d1").removeAttribute("open");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="abrirDialog()">Abrir</button>
+    <button onclick="fecharDialog()">Fechar</button>
+    <dialog id="d1" open>
+        <p> <dfn title="Linguagem de Marcação para Web">HTML</dfn> Hypertext Markup Language é uma linguagem de marcação utilizada na construção de paginas na Web</p> <!--dfn marca representação de uma definição. Display: inline-->
+
+    <p><dfn><abbr title="Formatação para páginas web">CSS</abbr></dfn> Cascading Style Sheets recurso para adicionar estilos/formatações a um documento</p>
+    </dialog>
+
+</body>
+</html>

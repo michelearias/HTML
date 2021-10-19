@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML Completo e profissional</title>
+    <style>
+
+        .quebra {
+            display: block;
+
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <!--representa um conteiner com os elementos de formulário. Tem display block-->
+
+    <form action="#" name="f_cadastro" method="get">
+
+        <fieldset> <!--agrupa itens do formulario-->
+            <legend>Dados 1</legend> <!--legenda para o formulario-->
+            <label for="f_nome">Nome:</label>
+            <input type="text" name="f_nome" id="f_nome" class="quebra"><br>
+
+            <label for="f_telefone">Telefone:</label><br>
+            <input type="tel" name="f_telefone" id="f_telefone" class="quebra"><br>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Dados 2</legend>
+            <label for="f_nome">Possui carro?</label><br>
+            <input type="radio" name="f_carro" id="f_carro" value="s" checked>SIM<br>
+            <input type="radio" name="f_carro" id="f_carro" value="n" checked>NÃO<br>
+        </fieldset>
+
+        <fieldset> <!--Parametro disabled desabilita o preenchimento de determinada parte do formulario-->
+            <legend>Dados 3</legend>
+            <label for="">Possui casa própria?<r></label><br>
+            <input type="radio" name="f_casa" id="f_casa" value="s" checked>SIM<br>
+            <input type="radio" name="f_casa" id="f_casa" value="n" checked>NÃO<br>
+        </fieldset>
+
+
+        <input class="quebra espaco_t" type="submit" value="Enviar" name="f_enviar"> 
+        
+        
+    </form>
+    
+</body>
+</html>

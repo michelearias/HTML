@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML Completo e profissional</title>
+    <style>
+
+        .quebra {
+            display: block;
+
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <!--representa um conteiner com os elementos de formulário. Tem display block-->
+
+    <form action="#" name="f_cadastro" method="get" enctype="multipart/form-data">
+
+        <label class="quebra" for="">Selecione o arquivo:</label>
+        <input type="file" name="f_arquivo" id="" multiple accept=".jpg,.png,.gif"> <!--para selecionar um arquivo. Utilizamos o parametro multiple para selecionar varios arquivos. Parametro accept para definir quais arquivos serão aceitos-->
+
+        <label class="quebra espaco_t" for="">Digite o url:</label>
+        <input type="url" name="f_url" id="">
+
+
+        <input class="quebra espaco_t" type="submit" value="Enviar" name="f_enviar"> 
+        
+        
+    </form>
+    
+</body>
+</html>

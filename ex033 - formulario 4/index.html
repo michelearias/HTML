@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de HTML Completo e profissional</title>
+    <style>
+
+        .quebra {
+            display: block;
+
+        }
+
+        .espaco {
+            margin-bottom: 15px;
+        }
+
+        .espaco_t {
+            margin-top: 15px;
+        }
+
+        form {
+            border: 1px solid #000;
+            padding: 10px;
+            border-radius: 10px;
+            background-color: #eee;
+        }
+
+    </style>
+</head>
+<body>
+    <!--representa um conteiner com os elementos de formulário. Tem display block-->
+
+    <form action="#" name="f_cadastro" method="get">
+
+        <label class="quebra espaco_t" for="">Mês:</label>
+        <input type="month" name="f_mes" id="" required>
+
+        <label class="quebra espaco_t" for="">Semana:</label>
+        <input type="week" name="f_semana" id=""  required> 
+
+        <input type="hidden" name="canal" value="cfbcursos"> <!--hidden: para fazer passagem de valores. Não é um componente visivel.-->
+
+        <input type="hidden" name="cursos" value="html5">
+
+
+        <input class="quebra espaco_t" type="submit" value="Enviar" name="f_enviar"> 
+        
+        
+    </form>
+    
+</body>
+</html>
